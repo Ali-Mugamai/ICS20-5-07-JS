@@ -16,10 +16,10 @@ if (navigator.serviceWorker) {
  * gets a random number and displays if you are right or wrong
  */
 function myButtonClicked() {
-  const num_one = parseInt(document.getElementById("number").value)
+  const num = parseInt(document.getElementById("number").value)
   let counter = 0
   let answer = 0
-  while (counter < number) {
+  while (counter < num) {
     counter = counter + 1
     answer = answer + counter
   }
