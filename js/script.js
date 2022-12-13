@@ -1,23 +1,27 @@
-// Copyright (c) 2020 ali-mugamai All rights reserved
+// Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: ali mugamai
+// Created by: Ali Mugamai9
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
-
-"use strict"
 
 /**
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS20-5-07-JS/sw.js", {
+    scope: "/ICS20-5-07-JS/",
   })
 }
-
 /**
- * This function displays an alert.
+ * gets a random number and displays if you are right or wrong
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  const num_one = parseInt(document.getElementById("number").value)
+  let counter = 0
+  let answer = 0
+  while (counter < number) {
+    counter = counter + 1
+    answer = answer + counter
+  }
+  document.getElementById("answer").innerHTML = "<p>Value is " + answer + "</p>"
 }
